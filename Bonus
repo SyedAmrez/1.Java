@@ -1,0 +1,57 @@
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) 
+	{
+	    double t,b,bou;
+	    String g;
+	    Scanner sc =new Scanner(System.in);
+		System.out.print("Enter grade of employee: ");
+		g=sc.nextLine();
+		System.out.print("Enter the employee salary: ");
+		double s=sc.nextDouble();
+		if(g.equals("A"))
+		{
+		    b=0.05*s;
+		    if(s<10000)
+    		{
+    		    bou=b+(0.02*s);
+    		    t=s+bou;
+    		    System.out.println("Salary: "+s);
+    		    System.out.println("Bonus: "+bou);
+    		    System.out.println("Total be paid: "+t);
+    		}
+    		else
+    		{
+    		    t=s+b;
+    		    System.out.println("Salary: "+s);
+    		    System.out.println("Bonus: "+b);
+    		    System.out.println("Total be paid: "+t);
+    		}
+		}
+		else if(g.equals("B"))
+		{
+		    b=0.1*s;
+		    if(s<10000)
+    		{
+    		    bou=b+(0.02*s);
+    		    t=s+bou;
+    		    System.out.println("Salary: "+s);
+    		    System.out.println("Bonus: "+bou);
+    		    System.out.println("Total be paid: "+t);
+    		}
+    		else
+    		{
+    		    t=s+b;
+    		    System.out.println("Salary: "+s);
+    		    System.out.println("Bonus: "+b);
+    		    System.out.println("Total be paid: "+t);
+    		}
+		}
+		else
+		{
+		    System.out.print("Invalid grade");
+		}
+	}
+}
+
